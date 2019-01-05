@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<p>使用此网页提交你的请求:</p>
+<tr><td>关键词:</td><td><input name='phrase' type='TEXT' width='60'></td>
+<td><input value='搜索' type='SUBMIT'></td>
+</tr>
+</table>
+</form>
+
+{% endblock %}
